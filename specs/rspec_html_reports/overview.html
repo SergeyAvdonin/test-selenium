@@ -270,7 +270,7 @@
       <div class="panel panel-default">
         <div class="panel-heading">Group Summary</div>
         <div class="panel-body">
-          <span class="pull-right label label-primary">2 Examples</span>
+          <span class="pull-right label label-primary">3 Examples</span>
 
           <div id="specification_summary">Loading chart...</div>
         </div>
@@ -283,7 +283,7 @@
       <div class="panel panel-default">
         <div class="panel-heading">Duration Summary</div>
         <div class="panel-body">
-          <span class="pull-right label label-primary">Finished in 16.17162</span>
+          <span class="pull-right label label-primary">Finished in 12.29600</span>
 
           <div id="duration_summary">Loading chart...</div>
         </div>
@@ -315,13 +315,13 @@
             <tr>
               <td>1</td>
               <td>
-                <a href="login-spec.html">Login spec</a>
+                <a href="register-company-spec.html">Register company spec</a>
               </td>
-              <td>8.08581</td>
+              <td>6.14800</td>
               <td class="warning"><span>0</span></td>
-              <td class="danger"><span>1</span></td>
-              <td class="success"><span>1</span></td>
-              <td><span class="label label-danger">failed</span></td>
+              <td class="danger"><span>0</span></td>
+              <td class="success"><span>3</span></td>
+              <td><span class="label label-success">passed</span></td>
             </tr>
         
         
@@ -336,8 +336,8 @@
 <script type="text/javascript">
     var myChart = new JSChart('specification_summary', 'pie', '');
     myChart.setDataArray([
-        ['Passed', 1],
-        ['Failed', 1],
+        ['Passed', 3],
+        ['Failed', 0],
         ['Pending', 0]
     ]);
     myChart.colorize(['#8DC63F', '#ED1C24', '#F7941D']);
@@ -350,7 +350,7 @@
     myChart.draw();
 
     var myChart2 = new JSChart('duration_summary', 'line', '');
-    myChart2.setDataArray([[0, 8.08581], [1, 8.08581]]);
+    myChart2.setDataArray([[0, 6.148], [1, 6.148]]);
     myChart2.setSize(400, 300);
     myChart2.setLineColor('#0070B8');
     myChart2.setTitle('');

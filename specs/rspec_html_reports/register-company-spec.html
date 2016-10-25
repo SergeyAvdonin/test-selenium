@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rspec HTML Reports - Login spec</title>
+  <title>Rspec HTML Reports - Register company spec</title>
 
   <!-- Bootstrap -->
   <link href="resources/bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
@@ -266,7 +266,7 @@
 
   <div class="row">
     <div class="col-lg-12">
-      <p class="text-center" style="font-size:2em;">Login spec</p>
+      <p class="text-center" style="font-size:2em;">Register company spec</p>
     </div>
   </div>
 
@@ -277,7 +277,7 @@
       <div class="panel panel-default">
         <div class="panel-heading">Examples Summary</div>
         <div class="panel-body">
-          <span class="pull-right label label-primary">2 Examples</span>
+          <span class="pull-right label label-primary">3 Examples</span>
 
           <div id="specification_summary">Loading chart...</div>
         </div>
@@ -290,7 +290,7 @@
       <div class="panel panel-default">
         <div class="panel-heading">Duration Summary</div>
         <div class="panel-body">
-          <span class="pull-right label label-primary">Finished in 8.08581</span>
+          <span class="pull-right label label-primary">Finished in 6.14800</span>
 
           <div id="duration_summary">Loading chart...</div>
         </div>
@@ -320,14 +320,14 @@
               <td>
                 <div>
                   
-                      Login spec login normal user
+                      Register company spec all empty fields
                   
                 </div>
                 <div>
                   
                 </div>
               </td>
-              <td>5.56756</td>
+              <td>1.89900</td>
               <td><span class="label label-success">passed</span></td>
             </tr>
         
@@ -336,36 +336,31 @@
               <td>
                 <div>
                   
-                      Login spec login super user
+                      Register company spec invalid company name
                   
                 </div>
                 <div>
                   
-
-                      <div class="panel panel-danger">
-                        <div class="panel-heading">
-                          <h3 class="panel-title">RSpec::Expectations::ExpectationNotMetError</h3>
-                        </div>
-                        <div class="panel-body">
-                          
-<span class="ss">expected: </span><span class="n">value</span> <span class="o">!=</span> <span class="s2">"</span><span class="se">\u</span><span class="s2">041C</span><span class="se">\u</span><span class="s2">043E</span><span class="se">\u</span><span class="s2">0439 </span><span class="se">\u</span><span class="s2">043A</span><span class="se">\u</span><span class="s2">0430</span><span class="se">\u</span><span class="s2">0431</span><span class="se">\u</span><span class="s2">0438</span><span class="se">\u</span><span class="s2">043D</span><span class="se">\u</span><span class="s2">0435</span><span class="se">\u</span><span class="s2">0442"</span>
-     <span class="ss">got: </span><span class="s2">"</span><span class="se">\u</span><span class="s2">041C</span><span class="se">\u</span><span class="s2">043E</span><span class="se">\u</span><span class="s2">0439 </span><span class="se">\u</span><span class="s2">043A</span><span class="se">\u</span><span class="s2">0430</span><span class="se">\u</span><span class="s2">0431</span><span class="se">\u</span><span class="s2">0438</span><span class="se">\u</span><span class="s2">043D</span><span class="se">\u</span><span class="s2">0435</span><span class="se">\u</span><span class="s2">0442"</span>
-
-<span class="p">(</span><span class="n">compared</span> <span class="n">using</span> <span class="o">==</span><span class="p">)</span>
-
-                          <h5>C:/Users/avdonin/Desktop/at_blizko/specs/login_spec.rb:19:in `block (2 levels) in <top (required)>'</h5>
-                              <span class="n">main_page</span><span class="p">.</span><span class="nf">login_as_super_user</span>
-<span class="o">---&gt;</span>    <span class="n">expect</span><span class="p">(</span><span class="n">main_page</span><span class="p">.</span><span class="nf">get_my_cabinet_title</span><span class="p">).</span><span class="nf">not_to</span> <span class="n">eq</span> <span class="p">(</span><span class="s2">"╨Ь╨╛╨╣ ╨║╨░╨▒╨╕╨╜╨╡╤В"</span><span class="p">)</span>
-  <span class="k">end</span>
-<span class="k">end</span>
-                        </div>
-                      </div>
-
+                </div>
+              </td>
+              <td>1.28600</td>
+              <td><span class="label label-success">passed</span></td>
+            </tr>
+        
+            <tr>
+              <td>3</td>
+              <td>
+                <div>
+                  
+                      Register company spec valid company name
+                  
+                </div>
+                <div>
                   
                 </div>
               </td>
-              <td>2.51825</td>
-              <td><span class="label label-danger">failed</span></td>
+              <td>2.96300</td>
+              <td><span class="label label-success">passed</span></td>
             </tr>
         
         </tbody>
@@ -379,8 +374,8 @@
 <script type="text/javascript">
     var myChart = new JSChart('specification_summary', 'pie', '');
     myChart.setDataArray([
-        ['Passed', 1],
-        ['Failed', 1],
+        ['Passed', 3],
+        ['Failed', 0],
         ['Pending', 0]
     ]);
     myChart.colorize(['#8DC63F', '#ED1C24', '#F7941D']);
@@ -393,7 +388,7 @@
     myChart.draw();
 
     var myChart2 = new JSChart('duration_summary', 'line', '');
-    myChart2.setDataArray([[0, 5.56756], [1, 2.51825]]);
+    myChart2.setDataArray([[0, 1.899], [1, 1.286], [2, 2.963]]);
     myChart2.setSize(400, 300);
     myChart2.setLineColor('#0070B8');
     myChart2.setTitle('');
